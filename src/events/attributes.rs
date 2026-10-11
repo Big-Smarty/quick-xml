@@ -253,6 +253,7 @@ impl<'a> Attribute<'a> {
     /// [for 1.0]: https://www.w3.org/TR/xml/#AVNormalize
     /// [only for]: https://html.spec.whatwg.org/#normalize-newlines
     /// [`EscapeError::TooManyNestedEntities`]: crate::escape::EscapeError::TooManyNestedEntities
+    #[inline]
     pub fn decoded_and_normalized_value_with<'entity>(
         &self,
         version: XmlVersion,
